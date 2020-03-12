@@ -26,6 +26,12 @@ pipeline {
       }
     }
 
+    stage('test') {
+      steps {
+        sh 'echo \'hello\''
+      }
+    }
+
   }
   environment {
     CI = 'true'
